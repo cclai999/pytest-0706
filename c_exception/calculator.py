@@ -23,6 +23,7 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
+        # return 0
         """Divide two numbers."""
         try:
             return a / b

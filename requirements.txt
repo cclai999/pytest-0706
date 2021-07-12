@@ -3,3 +3,5 @@ colorama
 pytest
 pytest-mock
 pytest-clarity
+reportlab==3.5.68
+
