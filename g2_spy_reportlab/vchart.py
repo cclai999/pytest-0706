@@ -1,5 +1,6 @@
 from reportlab.graphics.shapes import Drawing, Line
 from reportlab.lib import colors
+from reportlab.graphics import renderPDF
 
 
 class VChart(object):
@@ -46,7 +47,6 @@ class VChart(object):
 
 
 if __name__ == '__main__':
-    story = []
-    vchart = VChart(width=600, height=300)
-    vchart.draw()
-    story.append(vchart.drawing)
+    v_chart = VChart()
+    v_chart.draw()
+    renderPDF.drawToFile(v_chart.drawing, 'vchart_main.pdf')
