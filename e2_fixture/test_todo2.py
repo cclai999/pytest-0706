@@ -42,3 +42,4 @@ def test_add_todo(todos):
     assert todos.get_task(new_id)['title'] == '買牛奶'
     assert todos.get_task(new_id)['note'] == '2瓶'
     assert todos.get_task(new_id)['done'] is False
+    assert len(todos) == 3
